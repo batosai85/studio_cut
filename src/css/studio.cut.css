@@ -317,3 +317,9 @@ textarea:-ms-input-placeholder {
 .icon-map-marker {
     margin-left : 17px !important;
 }
+.textarea_holder {
+    padding-bottom: 0px;
+}
+.submit-form {
+    margin-top:10px !important;
+}
