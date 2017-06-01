@@ -1,0 +1,198 @@
+body {
+    background: #fff;
+}
+
+#main_wrapper {
+    background: #fff;
+}
+:focus {
+    outline: 0;
+}
+#map {
+    margin-top:-3%;
+    opacity: 0;
+    background: #fff;
+}
+.slide_bg1 {
+    background-image:-webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.50)),to(rgba(0, 0, 0, 0.50))),url(/dist/images/prva.jpg);
+    background-image:-webkit-linear-gradient(rgba(0, 0, 0, 0.50),rgba(0, 0, 0, 0.50)),url(/dist/images/prva.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.50),rgba(0, 0, 0, 0.50)),url(/dist/images/prva.jpg);
+}
+.slide_bg2 {
+    background-image:-webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.50)),to(rgba(0, 0, 0, 0.50))),url(/dist/images/druga.jpg);
+    background-image:-webkit-linear-gradient(rgba(0, 0, 0, 0.50),rgba(0, 0, 0, 0.50)),url(/dist/images/druga.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.50),rgba(0, 0, 0, 0.50)),url(/dist/images/druga.jpg);
+}
+.slide_bg3 {
+    background-image:-webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.50)),to(rgba(0, 0, 0, 0.50))),url(/dist/images/treca.jpg);
+    background-image:-webkit-linear-gradient(rgba(0, 0, 0, 0.50),rgba(0, 0, 0, 0.50)),url(/dist/images/treca.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.50),rgba(0, 0, 0, 0.50)),url(/dist/images/treca.jpg);
+}
+.slide_down a {
+    font-weight: bold !important;
+    text-decoration: none;
+    -webkit-transition: 0.5s linear all;
+    transition: 0.5s linear all;
+    letter-spacing: 2px;
+}
+.slide_down a:hover{
+    background-color: #6b0491;
+    border: 1px solid #6b0491;
+}
+.slide_down a:active, .slide_down a:visited {
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+}
+
+a.button, button, input[type="submit"], input[type="reset"], input[type="button"] {
+    border: 1px solid #6b0491;
+    color: #6b0491;
+    background: #fff;
+    -webkit-transition: 0.5s linear all;
+    transition: 0.5s linear all;
+}
+a.button:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
+    background-color: #6b0491;
+    color: #fff;
+}
+.input_holder input, .textarea_holder textarea {
+    border: 1px solid #6b0491;
+    font-weight:700;
+}
+
+#contact {
+    background: #fff;
+    opacity: 0;
+}
+.background_gray_con{
+    opacity: 0;
+
+}
+.empty-fields, .validate-mail{
+    opacity: 0;
+    margin-left:20%;
+    margin-bottom:0;
+    color: #6b0491; 
+
+}
+
+.empty-fields-show {
+    -webkit-animation: 1s empty-fields-show forwards;
+            animation: 1s empty-fields-show forwards;
+}
+.empty-fields-hide {
+    -webkit-animation: 1s empty-fields-hide forwards;
+            animation: 1s empty-fields-hide forwards;
+}
+.email_field {
+    margin-bottom: 0 !important;
+}
+input::-webkit-input-placeholder {
+    color: #65686d;
+    opacity: 0.7;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+    color: #65686d;
+    opacity: 0.7;
+}
+
+input::-moz-placeholder {  /* Firefox 19+ */
+    color:#65686d;
+    opacity: 0.7;
+}
+
+input:-ms-input-placeholder {  
+    color: #65686d;  
+    opacity: 0.7;
+}
+textarea::-webkit-input-placeholder {
+    color:#65686d;
+    opacity: 0.7;
+}
+
+textarea:-moz-placeholder { /* Firefox 18- */
+    color:#65686d;
+    opacity: 0.7; 
+}
+
+textarea::-moz-placeholder {  /* Firefox 19+ */
+    color:#65686d;
+    opacity: 0.7; 
+}
+
+textarea:-ms-input-placeholder {  
+    color:#65686d;
+    opacity: 0.7;
+}
+.message-sent{
+    opacity: 0;
+    display: inline-block;
+    color: #6b0491; 
+    margin-left:10px;
+}
+.contact_circle {
+    border: 1px solid #6b0491; 
+    background: #fff;
+    -webkit-transition: 0.5s linear all;
+    transition: 0.5s linear all;
+}
+.contact_circle i {
+    color: #6b0491;
+    -webkit-transition: 0.5s linear all;
+    transition: 0.5s linear all;
+}
+.contact_circle:hover {
+    background: #6b0491;
+}
+.contact_circle:hover i {
+    color: #fff;
+}
+.map-h1, .mail-h1, .contact-h1 {
+    color: #6b0491 !important;
+    opacity: 0;
+}
+.map-h1 {
+    margin-top : 20px;
+    margin-left:-20%;
+}
+.contact-h1 {
+    margin-left:-20%;
+}
+.mail-h1 {
+    margin-top:-5%;
+    margin-bottom:0;
+}
+.contact_side h1 {
+    margin-left:30%;
+    color: #fff;
+    opacity: 0;
+}
+.contact_detail .c_d_text {
+    color: #fff;
+}
+.instagram-h5 {
+    color: #9d9d9d;
+}
+.instagram-image {
+    margin-left:0 !important;
+}
+.mail-h1-anim {
+    -webkit-animation: 1s mail-h1-anim forwards;
+            animation: 1s mail-h1-anim forwards;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+}
+.contact-h1-anim {
+    -webkit-animation: 1s contact-h1-anim forwards;
+            animation: 1s contact-h1-anim forwards;
+    -webkit-animation-delay: 1.5s;
+            animation-delay: 1.5s;
+}
+.contact_form, .contact_detail {
+    opacity:0;
+}
+
+.contact_detail {
+    margin-top: 20%;
+}

@@ -9,7 +9,7 @@ $(function () {
     }
     $('#googlemap').gmap3({
         marker: {
-            address: "New York" // Your Adress Here
+            address: "Višnjićeva 5, Beograd" // Your Adress Here
         }
         , map: {
             options: {
@@ -64,8 +64,10 @@ $(function () {
         if (data.name === "" || data.subject === "" || data.message === "" || data.email === "") {
             $(".empty-fields").addClass("empty-fields-show");
             $(".empty-fields").removeClass("empty-fields-hide");
-            if (validateEmail(data.email)) {
+            if (validateEmail(data.email) && data.email === "") {
                 $(".validate-mail").removeClass("empty-fields-show");
+                $(".validate-mail").addClass("empty-fields-hide");
+            } else {
                 $(".validate-mail").addClass("empty-fields-hide");
             }
             return false;
