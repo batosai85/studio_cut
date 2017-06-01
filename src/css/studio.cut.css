@@ -314,4 +314,6 @@ textarea:-ms-input-placeholder {
 .contact_detail {
     margin-top: 20%;
 }
-
+.icon-map-marker {
+    margin-left : 17px !important;
+}
