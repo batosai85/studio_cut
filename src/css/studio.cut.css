@@ -50,7 +50,7 @@ body {
     text-decoration-line: none;
 }
 
-a.button, button, input[type="submit"], input[type="reset"], input[type="button"] {
+a.button, button, input[type="submit"], input[type="reset"], input[type="button"], .submit-form {
     border: 1px solid #6b0491;
     color: #6b0491;
     background: #fff;
@@ -69,7 +69,15 @@ a.button:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:ho
     border: 1px solid #6b0491;
     font-weight:700;
 }
-
+.textarea_holder textarea {
+    margin-bottom:0px;
+}
+.textarea_holder {
+    padding-bottom: 0px;
+}
+.textarea {
+    padding-top: 5px !important;
+}
 #contact {
     background: #fff;
     opacity: 0;
@@ -186,8 +194,10 @@ textarea:-ms-input-placeholder {
 .message-sent{
     opacity: 0;
     display: inline-block;
+    height:40px;
     color: #6b0491; 
     margin-left:10px;
+    vertical-align: center;
 }
 .contact_circle {
     border: 1px solid #6b0491; 
@@ -232,10 +242,9 @@ textarea:-ms-input-placeholder {
     color: #fff;
     opacity: 0;
 }
-.contact_detail .c_d_text {
-    color: #fff;
-}
+
 .instagram-h5 {
+    letter-spacing: 0.7px;
     color: #9d9d9d;
 }
 .instagram-image {
@@ -322,4 +331,12 @@ textarea:-ms-input-placeholder {
 }
 .submit-form {
     margin-top:10px !important;
+    padding-top: 9px !important;
+}
+.captcha-res {
+    opacity: 0;
+    color: #6b0491; 
+    margin:0;
+    padding:0;
+    font-size:12px;
 }

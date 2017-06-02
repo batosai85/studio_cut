@@ -61,13 +61,17 @@ $(function () {
     function sendEmail(data) {
         $(".empty-fields").removeClass("empty-fields-show");
         $(".validate-email").removeClass("empty-fields-show");
+        $(".captcha-res").animate({
+            opacity: "0"
+        }, 300);
         if (data.name === "" || data.subject === "" || data.message === "" || data.email === "") {
             $(".empty-fields").addClass("empty-fields-show");
             $(".empty-fields").removeClass("empty-fields-hide");
             if (validateEmail(data.email) && data.email === "") {
                 $(".validate-mail").removeClass("empty-fields-show");
                 $(".validate-mail").addClass("empty-fields-hide");
-            } else {
+            }
+            else {
                 $(".validate-mail").addClass("empty-fields-hide");
             }
             return false;
@@ -83,23 +87,35 @@ $(function () {
         else {
             $(".validate-mail").addClass("empty-fields-hide");
         }
-        $.ajax({
-            type: 'POST', //Method type
-            url: '/', //Your form processing file URL
-            data: JSON.stringify(data), //Forms name
-            dataType: 'json'
-            , contentType: 'application/json'
-            , success: function (data) {
-                $(".message-sent").animate({
-                    opacity: "1"
-                }, 2000);
-                $(".field-name").val('');
-                $(".email_field").val('');
-                $(".subject_field").val('');
-                $(".comment_field").val('');
-            }
-            , error: function (error) {}
-        });
+        var response = grecaptcha.getResponse();
+        if (response === "" || response === null || response.length == 0) {
+            $(".captcha-res").animate({
+                opacity: "1"
+            }, 300);
+        }
+        else {
+            $(".captcha-res").animate({
+                opacity: "0"
+            }, 300);
+            $.ajax({
+                type: 'POST', e
+                url: '/', 
+                data: JSON.stringify(data), 
+                dataType: 'json'
+                , contentType: 'application/json'
+                , success: function (data) {
+                    $(".message-sent").animate({
+                        opacity: "1"
+                    }, 2000);
+                    console.log(data);
+                    $(".field-name").val('');
+                    $(".email_field").val('');
+                    $(".subject_field").val('');
+                    $(".comment_field").val('');
+                }
+                , error: function (error) {}
+            });
+        }
     }
     $(".submit-form").on("click", function (e) {
         e.preventDefault();

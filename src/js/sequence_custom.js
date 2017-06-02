@@ -27,7 +27,7 @@ $(document).ready(function(){
 		catch(err){}	
 	$('.slide_bg').css({
 		marginLeft: - ($(window).width() - $('.slide_section').outerWidth())/2,
-		height: ($(window).height()),
+		height: "100%", //($(window).height()),
 		width : ($(window).width()) + 200
 	}); 
 	$('#sequence').css({

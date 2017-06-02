@@ -11,8 +11,9 @@ html, body{
 }
 	
 body {
-	font: 12px "PT Sans", sans-serif;
+    font: 12px  'Raleway', sans-serif;
 	line-height: 18px;
+    letter-spacing: 1px;
 	color: #eee;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
@@ -2318,7 +2319,15 @@ box-shadow: 0px 1px 0px #fff;
 .footer_inner .widget_text a:hover {color:#3899b5;}
 
 .footer_left { background: #333; }
-.footer_right { background: #444; font-size: 18px; padding: 30px 0px;margin-top:30px; text-align: center; color: #888888;font-family: 'Raleway', sans-serif;}
+.footer_right { 
+    background: #444;
+    font-size: 18px;
+    padding: 30px 0px;
+    padding-top:60px;
+    text-align: center;
+    color: #888888;
+    font-family: 'Raleway', sans-serif;
+}
 .footer_right img { margin-bottom: 15px;}
 .social_wrapper_ft {
   position:relative; text-align: center; padding: 45px 0px 35px 0px;
@@ -2459,7 +2468,7 @@ clear: both;
 .pricing .pricing_control ul li{margin:0}
 .pricing .price_header{font-size:15px;line-height:20px;font-weight:bold;background:#eee;color:#444;padding:20px;padding-top:10px;padding-bottom:10px}
 .pricing .price{font-size:32px;line-height:25px;font-weight:bold;background:#555;color:#fff;padding:20px;padding-top:15px;padding-bottom:15px}
-.pricing .price span{font:14px Helvetica,Arial,sans-serif;font-size:14px;line-height:12px;color:#aaa}
+.pricing .price span{font:14px font-family: 'Raleway', sans-serif;font-size:14px;line-height:12px;color:#aaa}
 .pricing .item{background:#eee;color:#555;padding:20px;padding-top:15px;padding-bottom:15px;border-bottom:1px solid #e7e7e7;}
 .pricing .buy{background:#eee;color:#555;padding-top:15px;padding-bottom:15px;border-top:1px solid #ddd;margin-top:-1px;}
 .pricing .orange .price_header{background:#3899b5;color:#fff;}
@@ -2748,7 +2757,7 @@ ul.info_inner li a:hover { color: #3899b5 !important;}
 	cursor: pointer;
 	padding: 6px 15px;
 	text-align: center;
-	font: bold 13px/150% "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+    font: bold 13px/150%  'Raleway', sans-serif; ;
 	color: #ffffff !important;
 	text-decoration: none;
 	border: 1px solid #ccc;
@@ -2808,10 +2817,10 @@ ol.list_cm ol.child li{padding:20px 0 0 30px; border:0px }
 ol.list_cm ol.child li li{padding-bottom:0px;}
 .list_cm .user_cm{float:left; margin:4px 15px 0 10px;padding:4px 4px 2px 4px;background-color:#e2e2e2;}
 .list_cm .comment_area{width:auto;}
-.time{font-size:11px;font-style:italic;font-family:Helvetica;}
+.time{font-size:11px;font-style:italic;font-family: 'Raleway', sans-serif; }
 .list_cm .comment_area .user_title{font-weight:bold; font-size: 14px;}
 .comment_text{padding:5px 0 0 0; display:block;}
-.comment_area .reply{text-decoration:none;position:absolute;right:10px;top:20px;font-style:italic;font-family:Helvetica;}
+.comment_area .reply{text-decoration:none;position:absolute;right:10px;top:20px;font-style:italic;font-family: 'Raleway', sans-serif; }
 .comment_area a.reply:hover{text-decoration:underline; color: #3899b5 !important;}
 .com_head{ padding:30px 0px 10px 0px; margin-bottom:0px;}
 
@@ -2926,7 +2935,7 @@ ol.list_cm ol.child li li{padding-bottom:0px;}
 .contact_circle_holder2 { position: relative; margin-bottom: 20px;}
 .contact_circle_holder2 i { font-size: 14px !important; position: absolute; margin: 15px 0px 0px 15px;}
 .contact_detail i { font-size: 18px ; position: absolute; margin: 15px 0px 0px 15px;}
-.contact_detail .c_d_text { font-size: 16px; color: #888888; position: absolute; margin-left: 60px ; margin-top: 12px;}
+.contact_detail .c_d_text { font-size: 16px; color: #fff; position: absolute; margin-left: 60px ; margin-top: 12px;}
 
 /* Totop plugin  */
 
@@ -2941,11 +2950,11 @@ ol.list_cm ol.child li li{padding-bottom:0px;}
 	height:51px;
 	border:none;
 	text-indent:-999px;
-	background:url(../images/totop.png) no-repeat left top;
+	background:url(/dist/images/totop.png) no-repeat left top;
 }
 
 #toTopHover {
-	background:url(../images/totop.png) no-repeat left -51px;
+	background:url(/dist/images/totop.png) no-repeat left -51px;
 	width:51px;
 	height:51px;
 	display:block;
@@ -2984,7 +2993,7 @@ ol.list_cm ol.child li li{padding-bottom:0px;}
 /* Alert Boxes  */
 
 .notification {
-	font-family: Arial, sans-serif;
+    font-family: 'Raleway', sans-serif; 
 	font-size: 12px;
 	line-height: 18px;
 	margin-bottom: 15px;
