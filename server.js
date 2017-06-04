@@ -8,8 +8,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true
 }));
-app.use("/dist", express.static(__dirname + "/src"));
-app.use("/dist2", express.static(__dirname + "/build"));
+
+app.use("/dist", express.static(__dirname + "/build"));
 
 app.use(router);
 
