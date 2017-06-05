@@ -6,6 +6,7 @@ $(function () {
         $("#toTop").css({
             right: "25px"
         });
+        $("head").append('<link rel="stylesheet" href="/dist/css/ie.fix.css"/>');
     }
     $('#googlemap').gmap3({
         marker: {

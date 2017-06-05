@@ -310,7 +310,7 @@ div .link a:hover{color:#3899b5 !important;}
 .hi_bg {background-color: #262626; padding: 0 5px; color: fff !important;}
 .hi_bg2 {background-color: #333333; padding: 0 5px; color: fff !important;}
 
-.color_hi {color: #3899b5 !important;}	 
+.color_hi {color: #6b0491 !important;}	 
 .color_hi a {color:#333333 !important;}
 .color_hi a:hover {color:#c6c6c6 !important;}
 .color_hi_2 {color: #ccc !important;}	 
@@ -2883,7 +2883,7 @@ ol.list_cm ol.child li li{padding-bottom:0px;}
 	color:#515a5f;
 }
 
-.contact_wrapper { position: relative;  background-image:linear-gradient(rgba(0, 0, 0, 0.50),rgba(0, 0, 0, 0.50)),url(/dist/images/prva.jpg);}
+.contact_wrapper { position: relative;  background-image:linear-gradient(rgba(0, 0, 0, 0.50),rgba(0, 0, 0, 0.50)),url(/dist/images/cetvrta.jpg);}
 .background_gray_con { background: #f7f7f7; padding: 50px 32px 60px 32px;}
 
 /* Contact Forms  */

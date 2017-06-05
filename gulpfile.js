@@ -61,8 +61,12 @@ gulp.task('js-min', function () {
 
 gulp.task('image-min', function () {
 
-    const src = "./src/img/*.jpg";
-    const dest = "./build/img";
+    const src = [
+                 "./src/images/*.jpg",
+                 "./src/images/*.png",
+                 "./src/images/*.gif"
+                ];
+    const dest = "./build/images";
     return gulp.src(src)
         .pipe($.imagemin())
         .pipe(gulp.dest(dest));

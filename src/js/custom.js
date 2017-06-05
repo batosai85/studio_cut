@@ -50,7 +50,7 @@ jQuery(function() {
  
 /* Testminal */
   
-   jQuery(function(){ 
+ /*  jQuery(function(){ 
 			// Testimonials Setting    
         	jQuery('.testimonials ul,.testimonials_2 ul').cycle({
 				timeout: 4000, 
@@ -59,7 +59,7 @@ jQuery(function() {
 				cleartypeNoBg: true, 
 				pauseOnPagerHover: 0
         });
-		});
+		});*/
 		
 /* Scale vid */
 	
